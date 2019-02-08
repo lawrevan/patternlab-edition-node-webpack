@@ -1,0 +1,41 @@
+.m-product-card {
+	padding: 10px;
+
+	&__wrapper {
+		padding: 20px;
+		border-radius: 5px;
+		box-shadow: 0 10px 40px -10px rgba($color-black, 0.3);
+		transition: 0.3s ease;
+
+		&:hover {
+			box-shadow: 0 14px 55px -10px rgba($color-black, 0.5);
+			transform: translateY(-2px);
+		}
+	}
+
+	&__image-wrapper {
+		margin: 0 0 10px 0;
+	}
+
+	&__image {
+		display: block;
+		width: 100%;
+	}
+
+	&__name a,
+	&__price {
+		@include fontSize(14px, 16px, 16px);
+		font-family: $font-family-primary;
+		line-height: 1.2;
+		color: $color-secondary;
+	}
+
+	&__name a {
+		font-weight: $font-weight-bold;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

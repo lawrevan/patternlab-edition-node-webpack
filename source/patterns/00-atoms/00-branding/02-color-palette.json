@@ -1,0 +1,48 @@
+{
+	"colors": {
+		"brand": [
+			{
+				"name": "$color-primary",
+				"hex": "#E86D20"
+			},
+			{
+				"name": "$color-secondary",
+				"hex": "#000"
+			}
+		],
+
+		"neutral": [
+			{
+				"name": "$color-white",
+				"hex": "#FFF"
+			},
+			{
+				"name": "$color-black",
+				"hex": "#000"
+			},
+			{
+				"name": "$color-gray",
+				"hex": "#666"
+			},
+			{
+				"name": "$color-light-gray",
+				"hex": "#F6F6F6"
+			}
+		],
+
+		"utility": [
+			{
+				"name": "$color-green",
+				"hex": "#5B792F"
+			},
+			{
+				"name": "$color-red",
+				"hex": "#D0021B"
+			},
+			{
+				"name": "$color-yellow",
+				"hex": "#EEBD03"
+			}
+		]
+	}
+}

@@ -1,0 +1,53 @@
+.m-checkbox {
+	position: relative;
+
+	&__input {
+		position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+
+        & + label {
+        	@include fontSize(14px, 16px, 16px);
+	        position: relative;
+	        display: inline-block;
+	        color: $color-secondary;
+	        vertical-align: middle;
+	        cursor: pointer;
+	        margin-bottom: 0;
+	        line-height: 1;
+
+	        span {
+	            vertical-align: middle;
+	        }
+	    }
+
+        &:checked + label:after {
+            opacity: 1;
+        }
+
+        & + label {
+        	&:before {
+                content: '';
+                border: 2px solid $color-secondary;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                vertical-align: middle;
+            }
+
+            &:after {
+            	@include fontSize(14px, 14px, 14px);
+            	@extend %icon-font;
+				content: $icon-check;
+                position: absolute;
+                top: 5px;
+                left: 5px;
+				color: $color-primary;
+                opacity: 0;
+                transition: opacity 0.2s ease-in-out;
+            }
+        }
+	}
+}

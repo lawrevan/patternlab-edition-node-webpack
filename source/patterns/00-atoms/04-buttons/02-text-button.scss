@@ -1,0 +1,26 @@
+.a-btn--text {
+	padding: 0;
+	text-transform: uppercase;
+	color: $color-secondary;
+	transition: color 0.35s ease-in-out;
+
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		width: 0;
+		height: 1px;
+		background-color: $color-secondary;
+		transition: width 0.35s ease-in-out, background-color 0.35s ease-in-out;
+	}
+
+	&:hover {
+		color: $color-primary;
+		
+		&:after {
+			width: 100%;
+			background-color: $color-primary;
+		}
+	}
+}

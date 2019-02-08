@@ -1,0 +1,24 @@
+<div class="m-hero-block {{styleModifier}}">
+
+	<picture>
+		{{#breakpointImages}}
+		<source media="{{desktop}}" srcset="{{imgSrcDesktop}}">
+		<source media="{{tablet}}" srcset="{{imgSrcTablet}}">
+		<source media="{{mobileLandscape}}" srcset="{{imgSrcMobileLandscape}}">
+        <img class="m-hero-block__image" src="{{imgSrcMobile}}" alt="{{imgAlt}}">
+		{{/breakpointImages}}
+    </picture>
+
+	<div class="m-hero-block__content">
+
+		<h1 class="m-hero-block__headline">{{headline}}</h1>
+
+		{{#description}}
+			<p class="m-hero-block__description">{{description}}</p>
+		{{/description}}
+
+		{{#cta}}
+			<a class="{{cta.class}} m-hero-block__cta" href="{{cta.link}}">{{cta.text}}</a>
+		{{/cta}}
+	</div>
+</div>

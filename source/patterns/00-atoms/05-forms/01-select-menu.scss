@@ -1,0 +1,27 @@
+select,
+.a-select-menu {
+	@include fontSize(14px, 16px, 16px);
+	position: relative;
+	font-family: $font-family-primary;
+	font-weight: $font-weight-normal;
+	color: $color-black;
+	line-height: 1.2;
+	padding: 10px;
+	margin: 0;
+	border: 1px solid $color-secondary;
+	border-radius: 0;
+	background-color: $color-white;
+    cursor:pointer;
+
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    &:focus {
+    	outline: none;
+    }
+
+    &::-ms-expand{
+        display:none;
+    }
+}

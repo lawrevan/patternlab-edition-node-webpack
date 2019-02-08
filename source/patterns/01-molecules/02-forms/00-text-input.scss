@@ -1,0 +1,14 @@
+.m-text-input {
+	label {
+		@include fontSize(14px, 16px, 18px);
+		display: inline-block;
+		line-height: 1.2;
+		font-weight: $font-weight-bold;
+		color: $color-secondary;
+		padding-bottom: 5px;
+	}
+
+	.a-text-input {
+		display: block;
+	}
+}

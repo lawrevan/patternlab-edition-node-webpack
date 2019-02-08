@@ -1,0 +1,13 @@
+.c-product-card-section {
+	&__title {
+		display: inline-block;
+
+		&:after {
+			content: '';
+			display: block;
+			width: 60%;
+			height: 10px;
+			background-color: $color-primary;
+		}
+	}
+}

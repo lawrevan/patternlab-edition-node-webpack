@@ -1,0 +1,33 @@
+<h6>Brand Colors</h6>
+<ul class="a-color-palette">
+	{{#colors.brand}}
+	<li>
+		<span class="a-color-palette__swatch" style="background:{{hex}}"></span>
+		<span class="a-color-palette__label">{{name}}<br>{{hex}}</span>
+	</li>
+	{{/colors.brand}}
+</ul>
+
+<br>
+
+<h6>Neutral Colors</h6>
+<ul class="a-color-palette">
+	{{#colors.neutral}}
+	<li>
+		<span class="a-color-palette__swatch" style="background:{{hex}}"></span>
+		<span class="a-color-palette__label">{{name}}<br>{{hex}}</span>
+	</li>
+	{{/colors.neutral}}
+</ul>
+
+<br>
+
+<h6>Utility Colors</h6>
+<ul class="a-color-palette">
+	{{#colors.utility}}
+	<li>
+		<span class="a-color-palette__swatch" style="background:{{hex}}"></span>
+		<span class="a-color-palette__label">{{name}}<br>{{hex}}</span>
+	</li>
+	{{/colors.utility}}
+</ul>

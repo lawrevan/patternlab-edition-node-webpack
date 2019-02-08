@@ -1,0 +1,31 @@
+textarea,
+.a-textarea {
+	@include fontSize(14px, 16px, 16px);
+	font-family: $font-family-primary;
+	font-weight: $font-weight-normal;
+	color: $color-black;
+	line-height: 1.2;
+	padding: 10px;
+	margin: 0;
+	border: 1px solid $color-black;
+	width: 100%;
+	min-height: 150px;
+
+	&:focus {
+		outline: none;
+		border-color: $color-primary;
+	}
+
+	&::placeholder{
+		color: $color-gray;
+	}
+	&:placeholder-shown{
+		color: $color-gray;
+	}
+	&:-ms-input-placeholder{
+		color: $color-gray;
+	}
+	&::-webkit-input-placeholder{
+		color: $color-gray;
+	}
+}

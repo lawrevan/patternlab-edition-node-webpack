@@ -1,0 +1,33 @@
+%button {
+	@include fontSize(14px, 16px, 16px);
+	position: relative;
+	display: inline-block;
+	font-family: $font-family-primary;
+	font-weight: $font-weight-normal;
+	line-height: 1.2;
+	outline: 0;
+	text-decoration: none;
+	padding: 10px 20px;
+	margin: 0;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+button,
+.a-btn {
+	@extend %button;
+
+	&--primary {
+		border: none;
+		background-color: $color-primary;
+		color: $color-white;
+		transition: background-color 0.35s ease-in-out;
+
+		&:hover {
+			background-color: $color-secondary;
+			color: $color-white;
+		}
+	}
+}

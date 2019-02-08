@@ -1,0 +1,27 @@
+ul,
+ol {
+    @include fontSize(14px, 16px, 16px);
+    font-family: $font-family-primary;
+    line-height: 1.2;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+        position: relative;
+        padding: 0 0 0 20px;
+
+        &:before {
+            content: '\2013';
+            position: absolute;
+            left: 0px;
+        }
+    }
+}
+
+ol {
+    padding: 0 0 0 20px;
+}

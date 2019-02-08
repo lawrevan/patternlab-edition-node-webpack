@@ -1,0 +1,38 @@
+.m-pagination{
+    a{
+        color: $color-primary;
+        transition: color 0.2s ease;
+        &:hover, &:active{
+            color: $color-secondary;
+        }
+    }
+    &__prev{
+        display:inline-block;
+        margin-right: 10px;
+        &--disabled{
+            display:none;
+        }
+    }
+    &__next{
+        display:inline-block;
+        margin-left: 10px;
+        &--disabled{
+            display:none;
+        }
+    }
+    &__numbers{
+        display:inline-block;
+    }
+    &__number{
+        display:inline-block;
+        padding: 0 5px;
+        &::before{
+            content:'';
+            display:none;
+        }
+        &--current a{
+            color: $color-secondary;
+            font-weight:bold;
+        }
+    }
+}

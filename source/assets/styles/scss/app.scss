@@ -1,0 +1,19 @@
+@import "utilities/_normalize.scss";
+@import "utilities/_global-styles.scss";
+//
+@import "fonts/_fonts.scss";
+@import "fonts/_icons.scss";
+//
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "../../../patterns/**/*.scss";
+//
+// // Buildkit specific, not used for the site
+@import "buildkit/_pattern-lab.scss";
+
+h1 {
+  color: blue;
+  &:hover {
+    color: $color-red;
+  }
+}

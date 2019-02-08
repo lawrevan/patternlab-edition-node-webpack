@@ -1,0 +1,39 @@
+.m-media-block {
+	$this: &;
+
+	&__image-wrapper {
+		margin-bottom: 20px;
+	}
+
+	&__image {
+		display: block;
+		width: 100%;
+	}
+
+	&__headline {
+		@extend %heading4;
+	}
+
+	@media screen and (min-width:$bp-tablet){
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__image-wrapper {
+			width: 40%;
+			margin: 0 20px 0 0;
+		}
+
+		&__content {
+			width: 60%;
+		}
+
+		&--reversed {
+			flex-direction: row-reverse;
+
+			#{$this}__image-wrapper {
+				margin: 0 0 0 20px;
+			}
+		}
+	}
+}

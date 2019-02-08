@@ -1,0 +1,64 @@
+/*
+ * Position absolute an element based on its vertical and horizontal alignment
+ */
+
+@mixin absolutePositioning($verticalAlignment: top, $horizontalAlignment: left) {
+    position: absolute;
+
+    @if ($verticalAlignment == 'top') {
+        top: 0;
+
+    } @else if ($verticalAlignment == 'middle') {
+        top: 50%;
+
+    } @else if ($verticalAlignment == 'bottom') {
+        top: auto;
+        bottom: 0;
+
+    }
+
+    @if ($horizontalAlignment == 'left') {
+        left: 0;
+
+    } @else if ($horizontalAlignment == 'center') {
+        left: 50%;
+        width: 100%;
+
+    } @else if ($horizontalAlignment == 'right') {
+        left: auto;
+        right: 0;
+
+    }
+
+    @if (($verticalAlignment == 'top' or $verticalAlignment == 'bottom') and $horizontalAlignment == 'center') {
+        transform: translate(-50%, 0);
+
+    } @else if ($verticalAlignment == 'middle' and ($horizontalAlignment == 'left' or $horizontalAlignment == 'right')) {
+        transform: translate(0, -50%);
+
+    } @else if ($verticalAlignment == 'middle' and $horizontalAlignment == 'center') {
+        transform: translate(-50%, -50%);
+
+    }
+}
+
+
+/*
+ * Calculates Rem value for font-size
+ * Px values are set as a fallback
+ */
+
+@mixin fontSize($mobile, $tablet, $desktop) {
+    font-size: $mobile;
+    font-size: ($mobile / $font-size-base) * 1rem;
+
+    @media (min-width: ($bp-tablet)) {
+        font-size: $tablet;
+        font-size: ($tablet / $font-size-base) * 1rem;
+    }
+
+    @media (min-width: ($bp-desktop)) {
+        font-size: $desktop;
+        font-size: ($desktop / $font-size-base) * 1rem;
+    }
+}

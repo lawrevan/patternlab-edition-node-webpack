@@ -25,7 +25,7 @@ module.exports = env => {
       entry: {
         // Gathers any Source JS files and creates a bundle
         //NOTE: This name can be changed, if so, make sure to update _meta/01-foot.mustache
-        "js/pl-source": globby
+        "js/bundle": globby
           .sync([
             resolve(__dirname, `${plConfig.paths.source.js}**/*.js`),
             "!**/*.test.js"
@@ -74,7 +74,7 @@ module.exports = env => {
           {
             // Copy all web fonts from source to public
             context: resolve(plConfig.paths.source.fonts),
-            from: "./*",
+            from: "./**/*",
             to: resolve(plConfig.paths.public.fonts)
           },
           {
@@ -82,6 +82,18 @@ module.exports = env => {
             context: resolve(plConfig.paths.source.css),
             from: "./*.css",
             to: resolve(plConfig.paths.public.css)
+          },
+          {
+            // Copy all scss from source to public
+            context: resolve(plConfig.paths.source.scss),
+            from: "./**/*.scss",
+            to: resolve(plConfig.paths.public.scss)
+          },
+          {
+            // Copy all js from source to public
+            context: resolve(plConfig.paths.source.js),
+            from: "./**/*.js",
+            to: resolve(plConfig.paths.public.js)
           },
           {
             // Styleguide Copy everything but css
@@ -169,7 +181,18 @@ module.exports = env => {
                 }
               }
             ]
+          },
+          {
+          test: /\.(woff|woff2|eot|ttf|svg)$/,
+          use: {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              publicPath: plConfig.paths.source.fonts,
+              outputPath: plConfig.paths.source.fonts
+            }
           }
+        },
         ]
       }
     },

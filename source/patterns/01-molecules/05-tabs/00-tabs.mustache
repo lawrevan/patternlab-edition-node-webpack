@@ -1,0 +1,11 @@
+<div class="m-tabs">
+    {{#tabs}}
+        <input type="radio" name="{{name}}" id="{{id}}" {{#isdefault}}checked{{/isdefault}}>
+        <label class="m-tabs__label" for="{{id}}">
+            {{heading}}
+        </label>
+        <div class="m-tabs__card">
+            {{content}}
+        </div>
+    {{/tabs}}
+</div>

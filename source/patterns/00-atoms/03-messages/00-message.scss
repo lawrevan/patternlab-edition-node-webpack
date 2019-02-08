@@ -1,0 +1,10 @@
+%message {
+	padding: 10px;
+    text-align: center;
+    color: $color-white;
+    background-color: $color-gray;
+}
+
+.a-message {
+    @extend %message;
+}

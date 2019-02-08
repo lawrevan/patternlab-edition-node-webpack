@@ -1,0 +1,21 @@
+{
+	"breakpointImages": {
+		"mobileLandscape": "(min-width: 576px)",
+		"tablet": "(min-width: 768px)",
+		"desktop": "(min-width: 1024px)",
+		"imgSrcMobile": "../../assets/images/placeholders/hero_block_mobile.jpg",
+		"imgSrcMobileLandscape": "../../assets/images/placeholders/hero_block_mobile-landscape.jpg",
+		"imgSrcTablet": "../../assets/images/placeholders/hero_block_tablet.jpg",
+		"imgSrcDesktop": "../../assets/images/placeholders/hero_block_desktop.jpg",
+		"imgAlt": "Hero Block"
+	},
+
+	"headline": "Lorem Ipsum Dolor Sit Amet",
+	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+	"cta": {
+		"class": "a-btn a-btn--primary",
+		"text": "Lorem Ipsum",
+		"link": "#"
+	}
+}

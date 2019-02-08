@@ -1,0 +1,89 @@
+%heading1 {
+	@include fontSize(48px, 72px, 96px);
+	font-family: $font-family-primary;
+	font-weight: $font-weight-bold;
+	line-height: 1.2;
+	color: $color-black;
+	text-align: left;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+%heading2 {
+	@include fontSize(40px, 60px, 80px);
+	font-family: $font-family-primary;
+	font-weight: $font-weight-bold;
+	line-height: 1.2;
+	color: $color-black;
+	text-align: left;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+%heading3 {
+	@include fontSize(32px, 48px, 64px);
+	font-family: $font-family-primary;
+	font-weight: $font-weight-normal;
+	line-height: 1.2;
+	color: $color-black;
+	text-align: left;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+%heading4 {
+	@include fontSize(24px, 32px, 40px);
+	font-family: $font-family-primary;
+	font-weight: $font-weight-normal;
+	line-height: 1.2;
+	color: $color-black;
+	text-align: left;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+%heading5 {
+	@include fontSize(18px, 24px, 24px);
+	font-family: $font-family-secondary;
+	font-weight: $font-weight-bold;
+	line-height: 1.2;
+	color: $color-black;
+	text-align: left;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+%heading6 {
+	@include fontSize(14px, 18px, 18px);
+	font-family: $font-family-secondary;
+	font-weight: $font-weight-normal;
+	line-height: 1.2;
+	color: $color-black;
+	text-align: left;
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+h1 {
+	@extend %heading1;
+}
+
+h2 {
+	@extend %heading2;
+}
+
+h3 {
+	@extend %heading3;
+}
+
+h4 {
+	@extend %heading4;
+}
+
+h5 {
+	@extend %heading5;
+}
+
+h6 {
+	@extend %heading6;
+}

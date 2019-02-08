@@ -1,0 +1,17 @@
+{
+    "name": "tabs",
+    "tabs":[
+        {
+            "id": "tab1",
+            "heading": "Tab One",
+            "isdefault": true,
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin commodo est mi, eu hendrerit ligula congue vel. Nam ullamcorper, eros quis pretium sagittis, odio turpis commodo purus, vel mollis ipsum tortor eu leo. Nulla non egestas metus. Maecenas rutrum felis eu nisi mattis efficitur. Proin porttitor ex vitae maximus euismod. Pellentesque suscipit mi et laoreet suscipit. Nullam quis ultricies turpis. Vivamus eleifend mi sed suscipit fermentum. Quisque in odio velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam euismod in urna a pharetra."
+        },
+        {
+            "id":"tab2",
+            "heading": "Tab Two",
+            "isdefault": false,
+            "content": "Nullam finibus ante ultricies tincidunt euismod. Sed faucibus volutpat elit. Curabitur sit amet dui ante. Duis ultrices augue turpis, eu lacinia nisl gravida id. Morbi nulla sem, gravida vitae tristique eu, bibendum at turpis. Donec eu pretium risus. Vivamus eu mollis mauris. In quis justo urna. Suspendisse sed nibh sit amet sem placerat posuere. Curabitur commodo dapibus ligula, et ornare arcu tincidunt ut. Sed pellentesque gravida sem vel dignissim. Cras rhoncus magna urna, in convallis augue hendrerit non. Morbi scelerisque sapien vel turpis scelerisque lacinia. Proin libero elit, maximus ac tincidunt a, interdum sed nunc. Morbi pellentesque in turpis id tempor."
+        }
+    ]
+}

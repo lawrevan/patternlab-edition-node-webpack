@@ -1,0 +1,55 @@
+/*
+ * Colors
+ */
+
+// Brand Colors
+$color-primary: #E86D20;
+$color-secondary: #000;
+
+// Neutral Colors
+$color-white: #FFF;
+$color-black: #000;
+$color-gray: #666;
+$color-light-gray: #F6F6F6;
+
+// Utility Colors
+$color-green: #5B792F;
+$color-red: #D0021B;
+$color-yellow: #EEBD03;
+$color-light: $color-white;
+
+
+/*
+ * Imported Fonts
+ */
+
+$font-roboto: 'Roboto', sans-serif;
+$font-roboto-condensed: 'Roboto Condensed', sans-serif;
+
+
+/*
+ * Font Variables
+ */
+
+// Font Sizes
+$font-size-base: 16px;
+
+// Font Families
+$font-family-primary: $font-roboto;
+$font-family-secondary: $font-roboto-condensed;
+
+// Icon Font Family
+$font-family-icon: 'icomoon';
+
+// Font Weights
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+
+/*
+ * Break Points
+ */
+
+$bp-tablet: 768px;
+$bp-desktop: 1024px;

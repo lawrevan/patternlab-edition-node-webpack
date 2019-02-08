@@ -1,0 +1,95 @@
+.m-hero-block {
+	$this: &;
+	position: relative;
+
+	&__image {
+		display: block;
+		width: 100%;
+	}
+
+	&__content {
+		padding: 20px;
+		text-align: left;
+		@media screen and (min-width:$bp-tablet){
+			@include absolutePositioning(top, left);
+			max-width: 80%;
+		}
+	}
+
+	&__headline {
+		text-align: left;
+	}
+
+	&__description {
+
+	}
+
+	&__cta {
+
+	}
+
+	&--center {
+		#{$this}__content {
+			@include absolutePositioning(top, center);
+			text-align: center;
+		}
+
+		#{$this}__headline {
+			text-align: center;
+		}
+	}
+
+	&--right {
+		#{$this}__content {
+			@include absolutePositioning(top, right);
+			text-align: right;
+		}
+
+		#{$this}__headline {
+			text-align: right;
+		}
+	}
+
+	&--middle {
+		#{$this}__content {
+			@include absolutePositioning(middle, left);
+		}
+
+		&#{$this}--center {
+			#{$this}__content {
+				@include absolutePositioning(middle, center);
+			}
+		}
+
+		&#{$this}--right {
+			#{$this}__content {
+				@include absolutePositioning(middle, right);
+			}
+		}
+	}
+
+	&--bottom {
+		#{$this}__content {
+			@include absolutePositioning(bottom, left);
+		}
+
+		&#{$this}--center {
+			#{$this}__content {
+				@include absolutePositioning(bottom, center);
+			}
+		}
+
+		&#{$this}--right {
+			#{$this}__content {
+				@include absolutePositioning(bottom, right);
+			}
+		}
+	}
+
+	&--light-text {
+		#{$this}__headline,
+		#{$this}__description {
+			color: $color-light;
+		}
+	}
+}

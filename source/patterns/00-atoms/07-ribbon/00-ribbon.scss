@@ -1,0 +1,9 @@
+.a-ribbon{
+    background: $color-primary;
+    color: $color-white;
+    text-align: center;
+    padding: 5px 0;
+    p:last-child{
+        margin-bottom:0;
+    }
+}

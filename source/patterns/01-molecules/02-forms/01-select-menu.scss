@@ -1,0 +1,25 @@
+.m-select-menu {
+	position: relative;
+	display: inline-block;
+
+	label {
+		@include fontSize(14px, 16px, 18px);
+		line-height: 1.2;
+		font-weight: $font-weight-bold;
+		color: $color-secondary;
+		padding-right: 5px;
+	}
+
+	.a-select-menu {
+		padding-right: 35px;
+	}
+
+	&:after {
+		@include absolutePositioning(middle, right);
+		@include fontSize(14px, 16px, 16px);
+		@extend %icon-font;
+		content: $icon-chevron-down;
+		color: $color-secondary;
+		margin-right: 10px;
+	}
+}

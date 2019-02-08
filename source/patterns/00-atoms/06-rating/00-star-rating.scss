@@ -1,0 +1,43 @@
+// %stars {
+// 	@include fontSize(14px, 16px, 16px);
+// 	content: $icon-star $icon-star $icon-star $icon-star $icon-star;
+// 	letter-spacing: 3px;
+// 	vertical-align: middle;
+// }
+//
+// .a-star-rating {
+// 	display: inline-block;
+//
+// 	&__placeholder {
+// 		position: relative;
+// 		display: inline-block;
+// 		vertical-align: middle;
+// 		overflow:hidden;
+//
+// 		&:before {
+// 			@extend %icon-font;
+// 			@extend %stars;
+// 			color: $color-gray;
+// 		}
+// 	}
+//
+// 	&__rating {
+// 		position: absolute;
+// 		top: 0;
+// 		display: block;
+// 		overflow: hidden;
+//
+// 		&:before {
+// 			@extend %icon-font;
+// 			@extend %stars;
+// 			color: $color-primary;
+// 		}
+// 	}
+//
+// 	&__count {
+// 		@extend %button;
+// 		padding: 0;
+// 		color: $color-secondary;
+// 		vertical-align: middle;
+// 	}
+// }

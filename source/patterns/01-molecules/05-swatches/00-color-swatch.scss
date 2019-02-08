@@ -1,0 +1,24 @@
+.m-color-swatch{
+    $this: &;
+    width: 20px;
+    height:20px;
+    margin: 5px;
+    &__tooltip{
+        display:none;
+        position:absolute;
+        top:25px;
+        left:-5px;
+    }
+    &:hover{
+        #{$this}__tooltip{
+            display:initial;
+        }
+    }
+    &__tooltip-swatch{
+        width: 100px;
+        height: 100px;
+    }
+    &--selected{
+        border: 1px solid $color-secondary;
+    }
+}

@@ -1,0 +1,10 @@
+{
+	"imgSrc": "../../assets/images/placeholders/product.png",
+	"imgAlt": "Product Card",
+	"name": "Sample Product",
+	"price": "$100.00",
+	"quantity": "2",
+	"textInputValue": "2",
+	"textBtnText": "Update",
+	"textBtnLink": "#"
+}

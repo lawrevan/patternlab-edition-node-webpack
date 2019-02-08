@@ -1,0 +1,19 @@
+body {
+	font-family: $font-family-primary;
+
+	em {
+		font-style: italic;
+	}
+
+	strong {
+		font-weight: $font-weight-bold;
+	}
+
+	&.font-secondary {
+		font-family: $font-family-secondary;
+	}
+
+	a {
+		color: $color-primary;
+	}
+}

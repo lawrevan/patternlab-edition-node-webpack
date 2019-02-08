@@ -1,0 +1,8 @@
+.pl-c-text-passage ul li,
+.pl-c-tabs__list-item {
+	padding: 0;
+
+	&:before {
+		content: '';
+	}
+}

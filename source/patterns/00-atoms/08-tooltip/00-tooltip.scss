@@ -1,0 +1,17 @@
+.a-tooltip{
+    position:absolute;
+    min-width:100px;
+    min-height:50px;
+    padding:10px;
+    background: $color-light-gray;
+    margin-top: 10px;
+    &::before{
+        content:'';
+        display:block;
+        border-left:10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid $color-light-gray;
+        position:absolute;
+        top:-10px;
+    }
+}

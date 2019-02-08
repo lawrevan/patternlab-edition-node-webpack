@@ -1,0 +1,42 @@
+.m-tabs{
+    display:flex;
+    flex-wrap: wrap;
+    &__label{
+        display:block;
+        cursor:pointer;
+        width: 100%;
+
+        margin-top: 5px;
+        padding: 5px;
+    }
+    &__card{
+        flex-grow:1;
+        width: 100%;
+        display:none;
+
+        background: $color-light-gray;
+        padding: 5px;
+    }
+    & > input[type="radio"]{
+        display:none;
+        &:checked + .m-tabs__label{
+            background: $color-light-gray;
+            & + .m-tabs__card{
+                display:block;
+            }
+        }
+    }
+
+    @media screen and (min-width: $bp-tablet){
+        &__label{
+            order:1;
+            width:auto;
+            margin-top:0;
+            margin-right: 5px;
+        }
+        &__card{
+            order:10;
+        }
+
+    }
+}

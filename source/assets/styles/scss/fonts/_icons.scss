@@ -1,0 +1,101 @@
+// @font-face {
+//     font-family: 'icomoon';
+//     src: url('fonts/icomoon/icomoon.eot?9waird');
+//     src: url('fonts/icomoon/icomoon.eot?9waird#iefix') format('embedded-opentype'),
+//         url('fonts/icomoon/icomoon.ttf?9waird') format('truetype'),
+//         url('fonts/icomoon/icomoon.woff?9waird') format('woff'),
+//         url('fonts/icomoon/icomoon.svg?9waird#icomoon') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+%icon-font {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    @extend %icon-font;
+}
+
+$icon-star: "\f005";
+$icon-expand: "\f067";
+$icon-collapse: "\f068";
+$icon-check: "\f00c";
+$icon-chevron-down: "\f078";
+$icon-facebook: "\e908";
+$icon-instagram: "\e909";
+$icon-pinterest: "\e90a";
+$icon-arrow-down: "\e900";
+$icon-arrow-left: "\e902";
+$icon-arrow-right: "\e903";
+$icon-arrow-up: "\e904";
+$icon-download: "\e905";
+$icon-search: "\e906";
+
+.icon-star:before {
+    content: $icon-star;
+}
+
+.icon-expand:before {
+    content: $icon-expand;
+}
+
+.icon-collapse:before {
+    content: $icon-collapse;
+}
+
+.icon-check:before {
+    content: $icon-check;
+}
+
+.icon-chevron-down:before {
+    content: $icon-chevron-down;
+}
+
+.icon-facebook:before {
+    content: $icon-facebook;
+}
+
+.icon-instagram:before {
+    content: $icon-instagram;
+}
+
+.icon-pinterest:before {
+    content: $icon-pinterest;
+}
+
+.icon-arrow-down:before {
+    content: $icon-arrow-down;
+}
+
+.icon-arrow-left:before {
+    content: $icon-arrow-left;
+}
+
+.icon-arrow-right:before {
+    content: $icon-arrow-right;
+}
+
+.icon-arrow-up:before {
+    content: $icon-arrow-up;
+}
+
+.icon-download:before {
+    content: $icon-download;
+}
+
+.icon-search:before {
+    content: $icon-search;
+}

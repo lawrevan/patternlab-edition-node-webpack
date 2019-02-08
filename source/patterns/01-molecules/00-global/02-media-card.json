@@ -1,0 +1,11 @@
+{
+	"imgSrc": "../../assets/images/placeholders/media_card.png",
+	"imgAlt": "Media Card",
+	"headline": "Lorem Ipsum Dolor Sit Amet",
+	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+	"cta": {
+		"class": "a-btn a-btn--text",
+		"text": "Lorem Ipsum",
+		"link": "#"
+	}
+}

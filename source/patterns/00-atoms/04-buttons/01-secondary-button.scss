@@ -1,0 +1,11 @@
+.a-btn--secondary {
+	border: 1px solid $color-secondary;
+	color: $color-secondary;
+	transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+    background-color: $color-white;
+
+	&:hover {
+		border-color: $color-primary;
+		color: $color-primary;
+	}
+}

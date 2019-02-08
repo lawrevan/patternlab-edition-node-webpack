@@ -1,0 +1,38 @@
+{
+	"mediaBlockTitle": "Lorem Ipsum Dolor",
+	"mediaBlocks": [
+		{
+			"imgSrc": "../../assets/images/placeholders/media_block.png",
+			"imgAlt": "Media Block",
+			"headline": "Lorem Ipsum Dolor Sit Amet",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"cta": {
+				"class": "a-btn a-btn--secondary",
+				"text": "Lorem Ipsum",
+				"link": "#"
+			}
+		},
+		{
+			"imgSrc": "../../assets/images/placeholders/media_block.png",
+			"imgAlt": "Media Block",
+			"headline": "Lorem Ipsum Dolor Sit Amet",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"cta": {
+				"class": "a-btn a-btn--secondary",
+				"text": "Lorem Ipsum",
+				"link": "#"
+			}
+		},
+		{
+			"imgSrc": "../../assets/images/placeholders/media_block.png",
+			"imgAlt": "Media Block",
+			"headline": "Lorem Ipsum Dolor Sit Amet",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"cta": {
+				"class": "a-btn a-btn--secondary",
+				"text": "Lorem Ipsum",
+				"link": "#"
+			}
+		}
+	]
+}

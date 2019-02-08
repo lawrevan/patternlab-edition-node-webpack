@@ -1,0 +1,17 @@
+<div class="m-media-card {{styleModifier}}">
+	<div class="m-media-card__image-wrapper">
+		<img class="m-media-card__image" src="{{imgSrc}}" alt="{{imgAlt}}">
+	</div>
+
+	<div class="m-media-card__content">
+		<div class="m-media-card__headline">{{headline}}</div>
+
+		{{#description}}
+			<p class="m-media-card__description">{{description}}</p>
+		{{/description}}
+
+		{{#cta}}
+			<a class="{{cta.class}} m-media-card__cta" href="{{cta.link}}">{{cta.text}}</a>
+		{{/cta}}
+	</div>
+</div>

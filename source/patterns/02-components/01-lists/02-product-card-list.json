@@ -1,0 +1,52 @@
+{
+	"productCards": [
+		{
+			"imgSrc": "../../assets/images/placeholders/product.png",
+			"imgAlt": "Product Card",
+			"name": "Sample Product",
+			"price": "$100.00",
+			"rating": "4",
+			"ratingCount": "2"
+		},
+		{
+			"imgSrc": "../../assets/images/placeholders/product.png",
+			"imgAlt": "Product Card",
+			"name": "Sample Product",
+			"price": "$100.00",
+			"rating": "2",
+			"ratingCount": "1"
+		},
+		{
+			"imgSrc": "../../assets/images/placeholders/product.png",
+			"imgAlt": "Product Card",
+			"name": "Sample Product",
+			"price": "$100.00",
+			"rating": "5",
+			"ratingCount": "2"
+		},
+		{
+			"imgSrc": "../../assets/images/placeholders/product.png",
+			"imgAlt": "Product Card",
+			"name": "Sample Product",
+			"price": "$100.00",
+			"rating": "3.5",
+			"ratingCount": "2"
+		},
+		{
+			"imgSrc": "../../assets/images/placeholders/product.png",
+			"imgAlt": "Product Card",
+			"name": "Sample Product",
+			"price": "$100.00",
+			"rating": "4.2",
+			"ratingCount": "2"
+		},
+		{
+			"imgSrc": "../../assets/images/placeholders/product.png",
+			"imgAlt": "Product Card",
+			"name": "Sample Product",
+			"price": "$100.00",
+			"rating": "4.8",
+			"ratingCount": "2"
+		}
+	]
+}

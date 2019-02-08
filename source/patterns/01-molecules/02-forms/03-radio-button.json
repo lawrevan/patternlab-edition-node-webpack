@@ -1,0 +1,16 @@
+{
+	"radioOptions": [
+		{
+			"radioId": "1",
+			"radioLabel": "Radio Label 1"
+		},
+		{
+			"radioId": "2",
+			"radioLabel": "Radio Label 2"
+		},
+		{
+			"radioId": "3",
+			"radioLabel": "Radio Label 3"
+		}
+	]
+}
